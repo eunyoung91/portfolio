@@ -770,7 +770,7 @@ nav.overlay:before {
 }
 /* intro sec2 About (공통)*/
 #intro_sec2 .about {
-	padding:10rem 0 3.5rem 0;
+	padding: 6rem 0 3.5rem 0;
 }
 #intro_sec2 .overview {
 	width:25%;
@@ -886,7 +886,7 @@ nav.overlay:before {
 }
 .common_next_wrap .next_area a .main_skill_text {
 	font-size:11vw;
-	letter-spacing:-0.01rem;
+	letter-spacing:-0.2rem;
 	text-transform:uppercase;
 	color:#2e2c2f;
 	font-family:'Montserrat';
@@ -1194,9 +1194,7 @@ nav.overlay:before {
 }
 /*=========== WebSite ===============*/
 /* WebSite Intro */
-img.site_df_img {
-	margin-top:17% !important;
-}
+
 figcaption.site_df_text {
 	left: -12% !important;
 }
@@ -1297,7 +1295,7 @@ svg#text-container text {
 	height:100%;
 	width:100%;
 	z-index:1;
-	padding:3rem 0;
+	padding: 3rem 0;
 }
 .flex__container:nth-child(2n){
 	background-color: #f3f3f3;
@@ -1316,11 +1314,10 @@ svg#text-container text {
 }
 .text--big {
 	font-family:'Montserrat';
-	font-size:5.35vw;
-	letter-spacing:-0.03rem;
+	font-size:3.35vw;
+	letter-spacing:-0.2rem;
 	font-weight:700;
 	line-height:1.2;
-	margin-left:-0.5rem;
 	position:relative;
 	color:#121111;
 }
@@ -1366,6 +1363,7 @@ svg#text-container text {
 .flex__content {
 	padding-left:10%;
 	padding-right:10%;
+	width:100%;
 }
 .pokemon__img {
 	max-height:35vw;
@@ -1914,7 +1912,7 @@ svg#text-container text {
 		font-size:12px;
 	}
 	#intro_sec1 .intro-img img {
-		width:12rem;
+		width:14rem;
 	}
 	#intro_sec1 .main-title h1 span {
 		font-size:5rem;
@@ -1960,7 +1958,8 @@ svg#text-container text {
 		top:0.6rem;
 	}
 	#intro_sec1 .main_cont {
-		bottom:6rem;
+		/* bottom:6rem; */
+		bottom:0;
 	}
 	#intro_sec1 .right-btn-wrap {
 		right:1.5rem;

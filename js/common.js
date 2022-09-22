@@ -2,20 +2,16 @@
 const body = $("body");
 
 $(".icon-wrap").click(function(){
-
 	$(".icon").toggleClass("animation");
 
-	// body.toggleClass("open");
-
-  if(!$("body").hasClass('open')) {
-      body.addClass('open');
-      body.removeClass('close');
-  } else {
-      body.removeClass('open');
-      body.addClass('close');
-  }
+	if(!$("body").hasClass('open')) {
+		body.addClass('open');
+		body.removeClass('close');
+	} else {
+		body.removeClass('open');
+		body.addClass('close');
+	}
 });
-
 
 // overview 부분 
 $('.ov_img_hv1').hover(function() {
@@ -42,8 +38,6 @@ $('.ov_img_hv1').hover(function() {
     $(".about-text p, .ov_img_hv1 , .ov_img_hv2").css("color", "#f9f9f9");
   });
 
-
-
   $('.ov_small_img_hv1').hover(function() {
     $(".ov_small_img1 img").addClass( "active_ov_img" );
     $(".about-text p").css("color", "#4e4e4e");
@@ -54,11 +48,7 @@ $('.ov_img_hv1').hover(function() {
 
 
 //커서 움직임 효과
-$(document).mousemove(function(e){
-    gsap.to(".cursor", {duration: 0.4, left: e.pageX - 5, top: e.pageY - 5 });
-});
-
-
+$(document).mousemove(function(e){ gsap.to(".cursor", {duration: 0.4, left: e.pageX - 5, top: e.pageY - 5 }); });
 
 //커서 오버 효과1
 $(".intro .main_cont ").hover(function(){
@@ -66,7 +56,6 @@ $(".intro .main_cont ").hover(function(){
 }, function(){
     $(".cursor").removeClass("active");
 });
-
 
 //커서 오버 효과2
 $(".next_area ").hover(function(){
@@ -76,7 +65,6 @@ $(".next_area ").hover(function(){
 });
 
 // page transition
-
  setTimeout(function () {
     document.getElementById("cover").classList.add("cover-left");
 });
@@ -163,9 +151,15 @@ left_nav.from(".left-nav, .icon-wrap", 0.5, {
 
 $(window).scroll(function() {
     let scroll = $(window).scrollTop();
-    let sec2_top = $("#intro_sec1 .main-title h1").offset().top ;
-    if( scroll > sec2_top) {
-        gsap.to(".overview span", {duration: 0.9, opacity: 1, x: 3,})
-        gsap.to(".about-text p:nth-child(1)", {duration: 0.7, stagger: 0.015, opacity: 1, y: 3 , delay: 0.3})
-    }
+	var section = $('.motion-box');
+	//motion
+	section.each(function(i) {
+		if (scroll >= section.eq(i).offset().top - 500) {
+			$(this).addClass('active');
+		} else {
+			$(this).removeClass('active');
+		}
+	});
+
+
 });

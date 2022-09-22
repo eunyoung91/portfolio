@@ -1,0 +1,17 @@
+// Core variables and mixins
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/extend";
+
+@import "module/motion";
+
+
+.skill-icon{
+	background:#bacdb0;
+	@include vw(width, 80px);
+	@include vw(height, 80px);
+	@include vw(border-radius, 80px);
+	img{
+		
+	}
+}

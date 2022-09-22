@@ -1,0 +1,621 @@
+.grid {
+  *zoom: 1;
+}
+.grid:before, .grid:after {
+  content: "";
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+
+.hidden,
+.sr_only,
+.sr-only {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 0px;
+  height: 0px;
+  margin: -1px;
+  padding: 0;
+  word-break: keep-all;
+  white-space: nowrap;
+  color: transparent;
+  border: 0;
+  text-indent: -9999px;
+}
+
+.grid {
+  position: relative;
+  box-sizing: border-box;
+}
+.grid .col {
+  position: relative;
+  float: left;
+  box-sizing: border-box;
+}
+
+.table {
+  display: table;
+}
+.table .table-cell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.effect-bounce-diagonal {
+  -webkit-animation-name: effectBounceDiagonal;
+          animation-name: effectBounceDiagonal;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+@-webkit-keyframes effectBounceDiagonal {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+}
+@keyframes effectBounceDiagonal {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+}
+
+.effect-bounce-updown {
+  -webkit-animation-name: effectBounceUpDown;
+          animation-name: effectBounceUpDown;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+@-webkit-keyframes effectBounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes effectBounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.effect-extend {
+  -webkit-animation-name: effectExtend;
+          animation-name: effectExtend;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+@-webkit-keyframes effectExtend {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+}
+@keyframes effectExtend {
+  0%, 100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+}
+
+.effect-blink {
+  -webkit-animation-name: effectBlink;
+          animation-name: effectBlink;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-end;
+          animation-timing-function: step-end;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+@-webkit-keyframes effectBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes effectBlink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.motion-1 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-2 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-3 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-4 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-5 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-6 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-7 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-8 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-9 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-10 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-11 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-12 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-1 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-2 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-3 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-4 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-5 {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-6 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-7 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-8 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-9 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-10 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-x-11 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-1 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-2 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-3 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-4 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-5 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-6 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-7 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-8 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-9 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-box-10 {
+  opacity: 0;
+  transform: scale(0.1, 0.1);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.motion-scale-y-1 {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  transform-origin: center bottom;
+}
+
+.motion-scale-y-2 {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  transform-origin: center bottom;
+}
+
+.motion-scale-y-3 {
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+  transition-timing-function: ease-out;
+  transform-origin: center bottom;
+}
+
+.active .motion-1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+.active .motion-2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+.active .motion-3 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+.active .motion-4 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+.active .motion-5 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s;
+}
+.active .motion-6 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.2s;
+}
+.active .motion-7 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.4s;
+}
+.active .motion-8 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.6s;
+}
+.active .motion-9 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.8s;
+}
+.active .motion-10 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 2s;
+}
+.active .motion-11 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 2.2s;
+}
+.active .motion-12 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 2.4s;
+}
+.active .motion-x-1 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+.active .motion-x-2 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.4s;
+}
+.active .motion-x-3 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.6s;
+}
+.active .motion-x-4 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.8s;
+}
+.active .motion-x-5 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1s;
+}
+.active .motion-x-6 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.2s;
+}
+.active .motion-x-7 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.4s;
+}
+.active .motion-x-8 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.6s;
+}
+.active .motion-x-9 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 1.8s;
+}
+.active .motion-x-10 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 2s;
+}
+.active .motion-x-11 {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 2.2s;
+}
+.active .motion-box-1 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.1s;
+}
+.active .motion-box-2 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.2s;
+}
+.active .motion-box-3 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.3s;
+}
+.active .motion-box-4 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.4s;
+}
+.active .motion-box-5 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.5s;
+}
+.active .motion-box-6 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.6s;
+}
+.active .motion-box-7 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.7s;
+}
+.active .motion-box-8 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.8s;
+}
+.active .motion-box-9 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 0.9s;
+}
+.active .motion-box-10 {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition-delay: 1s;
+}
+.active .motion-scale-y-1 {
+  opacity: 1;
+  transform: scaleY(1);
+  transition-delay: 0.1s;
+}
+.active .motion-scale-y-2 {
+  opacity: 1;
+  transform: scaleY(1);
+  transition-delay: 0.2s;
+}
+.active .motion-scale-y-3 {
+  opacity: 1;
+  transform: scaleY(1);
+  transition-delay: 0.3s;
+}
+
+.skill-icon {
+  background: #bacdb0;
+  width: 11.1111111111vw;
+  height: 11.1111111111vw;
+  border-radius: 11.1111111111vw;
+}
+@media screen and (min-width: 720px) {
+  .skill-icon {
+    width: 80px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .skill-icon {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .skill-icon {
+    border-radius: 80px;
+  }
+}/*# sourceMappingURL=common.css.map */

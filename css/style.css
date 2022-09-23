@@ -959,6 +959,7 @@ nav.overlay:before {
 #intro_sec3 .text_area {
 	display:flex;
 	justify-content:space-between;
+	padding-bottom: 4rem;
 }
 #intro_sec3 .text_area .small_skill_text {
 	width:25%;
@@ -989,61 +990,13 @@ nav.overlay:before {
 	color:#2e2c2f;
 	display:flex;
 	flex-wrap:wrap;
-}
-#intro_sec3 .skill_container ol li.empty {
-	border-top:0;
-}
-#intro_sec3 .skill_container ol li {
-	width:28%;
-	margin-top: 4rem;
-	padding-top: 2rem;
+	margin-left: 28%;
+	gap: 3rem 1rem;
 	border-top:1px solid #2e2c2f;
 }
-#intro_sec3 .skill_container ol li h3 {
-	font-size:8.6vw;
-	line-height:1;
-	letter-spacing:-0.01em;
-	font-family:'Montserrat',sans-serif;
-	margin-bottom:1rem;
-	font-weight:100;
-}
-#intro_sec3 .skill_container ol li dl dt {
-	font-size:2.7vw;
-	margin-bottom:2rem;
-	font-family:'Montserrat';
-	text-transform:uppercase;
-	font-weight:800;
-}
-#intro_sec3 .skill_container ol li dl dd p {
-	display:block;
-	font-size:1.2rem;
-	line-height:1.6;
-	font-weight:400;
-	font-family:'Chosunilbo_myungjo';
-	text-align:justify;
-}
-#intro_sec3 .skill_container ol li dl dd a {
-	display:inline-block;
-	color:#2e2c2f;
-	margin-top:1rem;
-	padding-bottom:0.4rem;
-	font-family:'Rajdhani';
-	position:relative;
-	border-bottom:1px solid #505050;
-}
-#intro_sec3 .skill_container ol li dl dd a::before {
-	content:'';
-	position:absolute;
-	top:0px;
-	left:0;
-	-webkit-transition:all 0.4s;
-	transition:all 0.4s;
-	height:100%;
-	border-bottom:1px solid #e7e7e7;
-	width:0;
-}
-#intro_sec3 .skill_container ol li dl dd a:hover::before {
-	width:100%;
+
+#intro_sec3 .skill_container ol li {
+
 }
 
 /*sec4 skill 부분 */

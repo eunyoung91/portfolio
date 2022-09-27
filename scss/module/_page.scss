@@ -1163,23 +1163,16 @@ svg#text-container {
 
 #mobile_sec1 {
 	width: 100%;
-	background: #f9f9f9;
-	height: auto;
-	padding-bottom: 4rem;
-	.mobile_title {
-		padding: 10rem 0;
-		opacity: 0;
-		transform: translateY(-30px);
-
+	.site_list_title {
+		background: #f9f9f9;
+		padding: 10rem 0 6rem 0;
 		h3 {
 			font-size: 7.5vw;
-			line-height: 6vw;
 			color: #020505;
 			font-family: 'Montserrat';
 			font-weight: 700;
 			text-align: center;
 		}
-
 		p {
 			text-align: center;
 			font-family: 'Chosunilbo_myungjo';
@@ -1189,35 +1182,10 @@ svg#text-container {
 			padding-top: 2rem;
 		}
 	}
-	.mobile_container {
-		.move {
-			width: 100%;
-			height: auto;
-			white-space: nowrap;
-			span {
-				display: inline-block;
-				width: 19.5vw;
-				height: auto;
-				margin-right: 2.8vw;
-				img {
-				width: 100%;
-				}
-			}
-		}
-		.move_exp_box {
-			text-align: center;
-			padding: 5rem 0 10rem 0;
-			h4 {
-				font-size: 3rem;
-			}
-			p {
-				font-family: 'Chosunilbo_myungjo';
-				font-size: 1.35rem;
-				line-height: 1.85;
-				word-break: keep-all;
-				margin-bottom: 1.6rem;
-			}
-		}
+	.site_list_container {
+		width: 100%;
+		position: relative;
+		background-color: #f9f9f9;
 	}
 }
 

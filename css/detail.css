@@ -1093,7 +1093,7 @@ a {
   font-weight: 600;
   padding-bottom: 2.7777777778vw;
   color: #2e2c2f;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
   font-size: 3.3333333333vw;
 }
 @media screen and (min-width: 720px) {
@@ -1232,11 +1232,11 @@ a {
 }
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box {
   position: relative;
-  padding-top: 10.4166666667vw;
+  padding-top: 5.5555555556vw;
 }
 @media screen and (min-width: 720px) {
   #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box {
-    padding-top: 75px;
+    padding-top: 40px;
   }
 }
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img {
@@ -1268,13 +1268,54 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  background: url("//img.eduwill.net/eduwill/html/webzine/img/cover.png") no-repeat 50% 50%;
+  background: url("../img/cover.png") no-repeat 50% 50%;
   background-size: cover;
   height: 30.4166666667vw;
 }
 @media screen and (min-width: 720px) {
   #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img:after {
     height: 219px;
+  }
+}
+#wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img h3 {
+  font-size: 3.0555555556vw;
+  font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
+  text-align: left;
+  line-height: 1;
+  display: inline-block;
+  margin-top: 5.5555555556vw;
+  margin-bottom: 5.5555555556vw;
+  position: relative;
+}
+@media screen and (min-width: 720px) {
+  #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img h3 {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 720px) {
+  #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img h3 {
+    margin-bottom: 40px;
+  }
+}
+#wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img h3:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  background: url("../img/check2.png") no-repeat 50% 50%;
+  background-size: contain;
+  height: 2.7777777778vw;
+}
+@media screen and (min-width: 720px) {
+  #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img h3:after {
+    height: 20px;
   }
 }
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .btn-open {
@@ -1286,8 +1327,8 @@ a {
   background-color: #fff;
   bottom: -4.1666666667vw;
   border: 1px solid #e8e8e8;
-  width: 47.2222222222vw;
-  padding: 2.7777777778vw 0;
+  width: 41.6666666667vw;
+  padding: 2.2222222222vw 0;
   box-sizing: border-box;
   text-align: center;
 }
@@ -1298,12 +1339,12 @@ a {
 }
 @media screen and (min-width: 720px) {
   #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .btn-open {
-    width: 340px;
+    width: 300px;
   }
 }
 @media screen and (min-width: 720px) {
   #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .btn-open {
-    padding: 20px 0;
+    padding: 16px 0;
   }
 }
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .btn-open {
@@ -1341,11 +1382,12 @@ a {
   }
 }
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .btn-open:before {
-  right: 5%;
+  right: 10%;
   margin-top: -4px;
 }
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .btn-open span {
   font-size: 2.7777777778vw;
+  font-family: "Noto Sans KR", "맑은 고딕", "Malgun Gothic", "Apple SD Gothic Neo", "Dotum", "돋움", "Gulim", "굴림", "굴림체", Sans-Serif;
   color: #222;
 }
 @media screen and (min-width: 720px) {

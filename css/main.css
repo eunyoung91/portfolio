@@ -1793,24 +1793,19 @@ svg#text-container text {
 /*=========== Moblie ===============*/
 #mobile_sec1 {
   width: 100%;
+}
+#mobile_sec1 .site_list_title {
   background: #f9f9f9;
-  height: auto;
-  padding-bottom: 4rem;
+  padding: 10rem 0 6rem 0;
 }
-#mobile_sec1 .mobile_title {
-  padding: 10rem 0;
-  opacity: 0;
-  transform: translateY(-30px);
-}
-#mobile_sec1 .mobile_title h3 {
+#mobile_sec1 .site_list_title h3 {
   font-size: 7.5vw;
-  line-height: 6vw;
   color: #020505;
   font-family: "Montserrat";
   font-weight: 700;
   text-align: center;
 }
-#mobile_sec1 .mobile_title p {
+#mobile_sec1 .site_list_title p {
   text-align: center;
   font-family: "Chosunilbo_myungjo";
   font-size: 1.75rem;
@@ -1818,33 +1813,10 @@ svg#text-container text {
   word-break: keep-all;
   padding-top: 2rem;
 }
-#mobile_sec1 .mobile_container .move {
+#mobile_sec1 .site_list_container {
   width: 100%;
-  height: auto;
-  white-space: nowrap;
-}
-#mobile_sec1 .mobile_container .move span {
-  display: inline-block;
-  width: 19.5vw;
-  height: auto;
-  margin-right: 2.8vw;
-}
-#mobile_sec1 .mobile_container .move span img {
-  width: 100%;
-}
-#mobile_sec1 .mobile_container .move_exp_box {
-  text-align: center;
-  padding: 5rem 0 10rem 0;
-}
-#mobile_sec1 .mobile_container .move_exp_box h4 {
-  font-size: 3rem;
-}
-#mobile_sec1 .mobile_container .move_exp_box p {
-  font-family: "Chosunilbo_myungjo";
-  font-size: 1.35rem;
-  line-height: 1.85;
-  word-break: keep-all;
-  margin-bottom: 1.6rem;
+  position: relative;
+  background-color: #f9f9f9;
 }
 
 .common_next_wrap .br_none::before {

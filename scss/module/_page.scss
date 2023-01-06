@@ -1454,7 +1454,6 @@ svg#text-container {
 	body {
 	}
 	html {
-		background-color: #f00;
 		font-size: 13px;
 	}
 	#intro_sec1 {
@@ -1701,7 +1700,11 @@ svg#text-container {
 		.intro-img figcaption {
 			display: none;
 		}
+		.right-btn-wrap {
+			right: 1.5rem;
+		}
 	}
+
 
 	#intro_sec2 .overview_img_wrap {
 		display: none;
@@ -1755,14 +1758,6 @@ svg#text-container {
 		}
 	}
 
-	#intro_sec1 {
-		.main_cont {
-		bottom: 0;
-		}
-		.right-btn-wrap {
-		right: 1.5rem;
-		}
-	}
 
 	#intro_sec2 {
 		padding-bottom: 3rem;

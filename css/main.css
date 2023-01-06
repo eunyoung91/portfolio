@@ -2057,7 +2057,6 @@ svg#text-container text {
 /* 반응형 */
 @media (max-width: 1410px) {
   html {
-    background-color: #f00;
     font-size: 13px;
   }
   #intro_sec1 .main-title h1 span {
@@ -2238,6 +2237,9 @@ svg#text-container text {
   #intro_sec1 .intro-img figcaption {
     display: none;
   }
+  #intro_sec1 .right-btn-wrap {
+    right: 1.5rem;
+  }
   #intro_sec2 .overview_img_wrap {
     display: none;
   }
@@ -2277,12 +2279,6 @@ svg#text-container text {
   }
   .icon:after {
     top: 0.6rem;
-  }
-  #intro_sec1 .main_cont {
-    bottom: 0;
-  }
-  #intro_sec1 .right-btn-wrap {
-    right: 1.5rem;
   }
   #intro_sec2 {
     padding-bottom: 3rem;

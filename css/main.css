@@ -1219,6 +1219,7 @@ nav.overlay:before {
   width: 100%;
 }
 #intro_sec1 .right-btn-wrap {
+  display: none !important;
   position: fixed;
   z-index: 5;
   top: auto;
@@ -1765,6 +1766,19 @@ svg#text-container text {
   max-height: 35vw;
   max-width: 35vw;
   opacity: 1;
+}
+
+.flex__content .action {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.flex__content .action a {
+  width: 33%;
+  margin: 0;
+  text-align: center;
 }
 
 /* Animate-START point */

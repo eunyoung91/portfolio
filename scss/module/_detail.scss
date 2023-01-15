@@ -255,8 +255,8 @@
 			font-weight: 600;
 			@include vw(padding-bottom, 20px);
 			color:#2e2c2f;
-			letter-spacing: -1.5px;
-			@include vw(font-size,24px);
+			letter-spacing: -1px;
+			@include vw(font-size,22px);
 			@include breakpoint(maxMobile){
 				@include vw(font-size,26px);
 			}
@@ -353,6 +353,7 @@
 							@include vw(height, 219px);
 						}
 						h3{
+							display: block !important;
 							@include vw(font-size, 22px);
 							font-family: $font-noto;
 							text-align: left;
@@ -361,20 +362,13 @@
 							@include vw(margin-top, 40px);
 							@include vw(margin-bottom, 40px);
 							position: relative;
-							&:after{
-								content:'';
-								position:absolute;left:0;top:100%;bottom:0;width:100%;
-								background:url('../img/check2.png') no-repeat 50% 50%;
-								background-size:contain;
-								// @include vw(width, 820px);
-								@include vw(height, 20px);
-							}
 						}
 					}
 	
 					.btn-open{
 						display:inline-block;
-						position:absolute;left:50%;bottom:0;transform:translateX(-50%);
+						position:absolute;left:50%;bottom:0;
+						transform:translateX(-50%);
 						background-color:#fff;
 						@include vw(bottom, -30px);
 						border:1px solid #e8e8e8;

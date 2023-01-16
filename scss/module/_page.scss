@@ -519,7 +519,7 @@ nav.overlay {
 					width: 79%;
 				}
 				float: left;
-				width: 33%;
+				width: 50%;
 			}
 			width: 72%;
 		}
@@ -1036,7 +1036,7 @@ svg#text-container {
 	height: 100%;
 	width: 100%;
 	z-index: 1;
-	padding: 3rem 0;
+	padding: 4rem 0 3rem 0;
 	&:nth-child(2n) {
 		background-color: #ececec;
 	}

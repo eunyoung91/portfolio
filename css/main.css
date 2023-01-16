@@ -1209,7 +1209,7 @@ nav.overlay:before {
 }
 #intro_sec1 .main-top-area .center-nav li {
   float: left;
-  width: 33%;
+  width: 50%;
 }
 #intro_sec1 .main-top-area .center-nav li a {
   display: block;
@@ -1685,7 +1685,7 @@ svg#text-container text {
   height: 100%;
   width: 100%;
   z-index: 1;
-  padding: 3rem 0;
+  padding: 4rem 0 3rem 0;
 }
 .flex__container:nth-child(2n) {
   background-color: #ececec;

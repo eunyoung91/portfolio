@@ -245,55 +245,31 @@ nav.overlay {
 		font-family: 'Montserrat';
 		transform: translatey(30px);
 		padding: 0 20px;
-
 		a {
-		display: block;
-		width: 100%;
-		height: 100%;
-
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			margin: auto;
-			left: auto;
-			background: url('../img/check.png');
-			background-position: center;
-			background-size: contain;
-			background-repeat: no-repeat;
-			width: 0;
-			height: 3rem;
-			overflow: hidden;
-			transition: width 0.2s cubic-bezier(0.18, 0.45, 0.1, 0.98);
-		}
-
-		&:hover:before {
-			left: 0;
-			right: auto;
+			display: block;
 			width: 100%;
-		}
-
-		&:after {
-			opacity: 0;
-			content: attr(data-text);
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			margin: auto;
-			color: #1B191C;
-			transform: translate(-24px, 0);
-			transition: opacity 0.2s cubic-bezier(0.18, 0.45, 0.1, 0.98), transform 0.9s cubic-bezier(0.18, 0.45, 0.1, 0.98);
-		}
-
-		&:hover:after {
-			opacity: 1;
-			transform: translate(0, 0);
-		}
+			height: 100%;
+			&:before {
+				content: "";
+				position: absolute;
+				top: 2rem;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				width: 0;
+				height: 3rem;
+				overflow: hidden;
+				transition: width 0.2s cubic-bezier(0.18, 0.45, 0.1, 0.98);
+				z-index:-1;
+			}
+			&:hover:before {
+				top: 1rem;
+				left: 0;
+				right: 0;
+				width: 50%;
+				background-color:#bacdb0;
+			}
 		}
 	}
 }
@@ -521,7 +497,7 @@ nav.overlay {
 				float: left;
 				width: 50%;
 			}
-			width: 72%;
+			width: 70%;
 		}
 	}
 
@@ -808,7 +784,7 @@ nav.overlay {
 		}
 
 		.copyright {
-			color: #5f5f5f;
+			color: #e7e7e7;
 		}
 
 		.like_email {
@@ -984,13 +960,11 @@ svg#text-container {
 }
 
 /* WebSite 슬라이더 부분*/
-
 #website_sec1 {
 	width: 100%;
 	.site_list_title {
 		background: #f9f9f9;
-		padding: 10rem 0 6rem 0;
-
+		padding: 8rem 0 4rem 0;
 		h3 {
 			font-size: 7.5vw;
 			color: #020505;
@@ -1483,11 +1457,11 @@ svg#text-container {
 
 		.main-top-area {
 			.center-nav {
-				display: none;
+				// display: none;
 			}
 
 			.left-tit {
-				width: 70%;
+				width: 26%;
 			}
 		}
 	}
@@ -1524,8 +1498,12 @@ svg#text-container {
 		.intro-img {
 			margin-bottom: 2.5rem;
 		}
+		.center-nav {
+			display: none;
+		}
 	}
 
+	
 	.flex__content {
 		.action {
 			justify-content: center;

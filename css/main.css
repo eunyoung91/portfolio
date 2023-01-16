@@ -976,42 +976,23 @@ nav.overlay:before {
 .menu li a:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 2rem;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  left: auto;
-  background: url("../img/check.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 0;
   height: 3rem;
   overflow: hidden;
   transition: width 0.2s cubic-bezier(0.18, 0.45, 0.1, 0.98);
+  z-index: -1;
 }
 .menu li a:hover:before {
+  top: 1rem;
   left: 0;
-  right: auto;
-  width: 100%;
-}
-.menu li a:after {
-  opacity: 0;
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  color: #1B191C;
-  transform: translate(-24px, 0);
-  transition: opacity 0.2s cubic-bezier(0.18, 0.45, 0.1, 0.98), transform 0.9s cubic-bezier(0.18, 0.45, 0.1, 0.98);
-}
-.menu li a:hover:after {
-  opacity: 1;
-  transform: translate(0, 0);
+  width: 50%;
+  background-color: #bacdb0;
 }
 
 .open .menu li {
@@ -1205,7 +1186,7 @@ nav.overlay:before {
   width: 100%;
 }
 #intro_sec1 .main-top-area .center-nav {
-  width: 72%;
+  width: 70%;
 }
 #intro_sec1 .main-top-area .center-nav li {
   float: left;
@@ -1453,7 +1434,7 @@ nav.overlay:before {
   font-size: 1rem;
 }
 #footer .footer_flex_wrap .copyright {
-  color: #5f5f5f;
+  color: #e7e7e7;
 }
 #footer .footer_flex_wrap .like_email {
   text-align: center;
@@ -1646,7 +1627,7 @@ svg#text-container text {
 }
 #website_sec1 .site_list_title {
   background: #f9f9f9;
-  padding: 10rem 0 6rem 0;
+  padding: 8rem 0 4rem 0;
 }
 #website_sec1 .site_list_title h3 {
   font-size: 7.5vw;
@@ -2080,11 +2061,8 @@ svg#text-container text {
   #intro_sec1 .intro-img img {
     width: 14rem;
   }
-  #intro_sec1 .main-top-area .center-nav {
-    display: none;
-  }
   #intro_sec1 .main-top-area .left-tit {
-    width: 70%;
+    width: 26%;
   }
   svg#text-container text {
     font-size: 2.4rem;
@@ -2109,6 +2087,9 @@ svg#text-container text {
   }
   #intro_sec1 .intro-img {
     margin-bottom: 2.5rem;
+  }
+  #intro_sec1 .center-nav {
+    display: none;
   }
   .flex__content .action {
     justify-content: center;

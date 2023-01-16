@@ -102,7 +102,7 @@ let side_img =  gsap.timeline();
 side_img.from("#intro_sec1 .intro-img", 0.8, {
   opacity: 0,
   y: -30,
-  delay: 2.2,
+  delay: 2.0,
   duration: 1,
   ease: Back.easeOut.config(1.1)
 });
@@ -113,7 +113,7 @@ let left_tit = gsap.timeline();
 left_tit.from(".main-top-area .left-tit", 0.3, {
   opacity: 0,
   x: -30,
-  delay: 2.9,
+  delay: 2.6,
   duration: 1,
   ease: Back.easeOut.config(1.1)
 });
@@ -122,29 +122,18 @@ left_tit.from(".main-top-area .left-tit", 0.3, {
 let center_nav1 = gsap.timeline();
 
 center_nav1.from(".center-nav", 0.5, {
-  opacity: 0,
-  x: -30,
-  delay:3.7,
-  duration: 1,
-  ease: Back.easeOut.config(1.1)
-});
-
-
-let right_btn = gsap.timeline();
-
-right_btn.from(".right-btn-wrap", 0.5, {
-  opacity: 0,
-  x: -30,
-  delay: 4.1,
-  duration: 1,
-  ease: Back.easeOut .config(1.1)
+	opacity: 0,
+	x: -30,
+	delay:3.5,
+	duration: 1,
+	ease: Back.easeOut.config(1.1)
 });
 
 let left_nav =  gsap.timeline();
 
 left_nav.from(".left-nav, .icon-wrap", 0.5, {
   opacity: 0,
-  delay: 4.6,
+  delay: 3.2,
   duration: 1,
   ease: Back.easeOut.config(1.3)
 });
@@ -160,6 +149,5 @@ $(window).scroll(function() {
 			$(this).removeClass('active');
 		}
 	});
-
 
 });

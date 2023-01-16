@@ -363,6 +363,18 @@
 							@include vw(margin-bottom, 40px);
 							position: relative;
 						}
+						
+						@include breakpoint(maxMobile){
+							.main-view-img-mo{
+								display: inline-block;
+								text-align: left;
+								img{
+									width:44%;
+									margin:2% 2%;
+								}
+							}
+						}
+
 					}
 	
 					.btn-open{

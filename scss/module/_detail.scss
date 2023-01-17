@@ -257,6 +257,7 @@
 			color:#2e2c2f;
 			letter-spacing: -1px;
 			@include vw(font-size,22px);
+			font-family: $font-eduwill-B;
 			@include breakpoint(maxMobile){
 				@include vw(font-size,26px);
 			}

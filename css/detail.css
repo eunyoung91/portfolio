@@ -1849,7 +1849,7 @@ br {
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img {
   position: relative;
   max-height: 277.7777777778vw;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -1914,10 +1914,6 @@ br {
   #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img .main-view-img-mo {
     display: inline-block;
     text-align: left;
-  }
-  #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .main-view-img .main-view-img-mo img {
-    width: 44%;
-    margin: 2% 2%;
   }
 }
 #wrap .main-view .main-tab-wrap .main-tab-view .main-view-box .btn-open {

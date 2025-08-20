@@ -17,34 +17,34 @@ $(".icon-wrap").click(function(){
 $('.ov_img_hv1').hover(function() {
     $(".ov_img1 img").addClass( "active_ov_img" );
     $(".about-text p, .ov_img_hv2, .ov_img_hv3").css("color", "#4e4e4e");
-  }, function(){
+}, function(){
     $( '.ov_img1 img' ).removeClass( 'active_ov_img' );
     $(".about-text p, .ov_img_hv2, .ov_img_hv3").css("color", "#f9f9f9");
-  });
+});
 
-  $('.ov_img_hv2').hover(function() {
+$('.ov_img_hv2').hover(function() {
     $(".ov_img2 img").addClass( "active_ov_img" );
     $(".about-text p, .ov_img_hv1, .ov_img_hv3 ").css("color", "#4e4e4e");
-  }, function(){
+}, function(){
     $( '.ov_img2 img' ).removeClass( 'active_ov_img' );
     $(".about-text p, .ov_img_hv1, .ov_img_hv3").css("color", "#f9f9f9");
-  });
+});
 
-  $('.ov_img_hv3').hover(function() {
+$('.ov_img_hv3').hover(function() {
     $(".ov_img3 img").addClass( "active_ov_img" );
     $(".about-text p, .ov_img_hv1 , .ov_img_hv2").css("color", "#4e4e4e");
-  }, function(){
+}, function(){
     $( '.ov_img3 img' ).removeClass( 'active_ov_img' );
     $(".about-text p, .ov_img_hv1 , .ov_img_hv2").css("color", "#f9f9f9");
-  });
+});
 
-  $('.ov_small_img_hv1').hover(function() {
+$('.ov_small_img_hv1').hover(function() {
     $(".ov_small_img1 img").addClass( "active_ov_img" );
     $(".about-text p").css("color", "#4e4e4e");
-  }, function(){
+}, function(){
     $( '.ov_small_img1 img' ).removeClass( 'active_ov_img' );
     $(".about-text p").css("color", "#f9f9f9");
-  });
+});
 
 
 //커서 움직임 효과
@@ -65,29 +65,30 @@ $(".next_area ").hover(function(){
 });
 
 // page transition
- setTimeout(function () {
+setTimeout(function () {
     document.getElementById("cover").classList.add("cover-left");
 });
 
 function pageClick() {
-  document.querySelectorAll(".page_click").forEach((elem) => {
-    elem.addEventListener("click", (e) => {
-      e.preventDefault();
-      const dataName = elem.getAttribute('data-name');
-      document.getElementById("cover").classList.add("cover-right");
-      setTimeout(() => {
-        window.location.href =
-          dataName + ".html";
-      }, 2000);
+    document.querySelectorAll(".page_click").forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+            e.preventDefault();
+            const dataName = elem.getAttribute('data-name');
+            document.getElementById("cover").classList.add("cover-right");
+            setTimeout(() => {
+            window.location.href =
+                dataName + ".html";
+            }, 2000);
+        });
     });
-  });
 }
+
 pageClick();
 
 //공통 인트로 텍스트 애니메이션
 
 Splitting();
- TweenMax.staggerFrom('.char', 1.3, {
+TweenMax.staggerFrom('.char', 1.3, {
     y: 70,
     delay: 1.1,
     rotation:90,
@@ -100,22 +101,22 @@ Splitting();
 let side_img =  gsap.timeline();
 
 side_img.from("#intro_sec1 .intro-img", 0.8, {
-  opacity: 0,
-  y: -30,
-  delay: 2.0,
-  duration: 1,
-  ease: Back.easeOut.config(1.1)
+    opacity: 0,
+    y: -30,
+    delay: 2.0,
+    duration: 1,
+    ease: Back.easeOut.config(1.1)
 });
 
 
 let left_tit = gsap.timeline();
 
 left_tit.from(".main-top-area .left-tit", 0.3, {
-  opacity: 0,
-  x: -30,
-  delay: 2.6,
-  duration: 1,
-  ease: Back.easeOut.config(1.1)
+    opacity: 0,
+    x: -30,
+    delay: 2.6,
+    duration: 1,
+    ease: Back.easeOut.config(1.1)
 });
 
 
@@ -132,14 +133,14 @@ center_nav1.from(".center-nav", 0.5, {
 let left_nav =  gsap.timeline();
 
 left_nav.from(".left-nav, .icon-wrap", 0.5, {
-  opacity: 0,
-  delay: 3.2,
-  duration: 1,
-  ease: Back.easeOut.config(1.3)
+    opacity: 0,
+    delay: 3.2,
+    duration: 1,
+    ease: Back.easeOut.config(1.3)
 });
 
 $(window).scroll(function() {
-    let scroll = $(window).scrollTop();
+  let scroll = $(window).scrollTop();
 	var section = $('.motion-box');
 	//motion
 	section.each(function(i) {

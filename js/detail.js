@@ -33,7 +33,7 @@ function create(){
     _w = $(window);
     _wrap = $('#wrap');
     _wid = _w.width();
-    
+
     _gnb = $("#gnb");
     _menu = $(".menu");
     _menuIcon = $(".menu-icon");
@@ -42,8 +42,8 @@ function create(){
     _header = $("header");
     _navHei = _header.height();
 
-	_searchOpenBtn = $(".btn-open-search");
-	_searchCloseBtn = $(".btn-close-search");
+    _searchOpenBtn = $(".btn-open-search");
+    _searchCloseBtn = $(".btn-close-search");
 
 }
 
@@ -66,8 +66,7 @@ function addEvent(){
     //tabEvent('.section-video');
     //slideEvent();
     // faqClickEvent();
-   
- 
+
 	pageMove('.page-move');
 
 }
@@ -246,13 +245,13 @@ function pageMove($selector, $position){
 		var _top = $($(this).attr('href'));
 		var $target = _top.offset().top;
 
-    // 모바일에서 gnb 클릭시 gnb 닫기 
-    if(_wid < _breakpoint){
-      _menuIcon.removeClass("active");
-      _dim.hide();
-      _gnb.slideUp();
-      _header.removeClass("change");
-    }
+        // 모바일에서 gnb 클릭시 gnb 닫기 
+        if(_wid < _breakpoint){
+        _menuIcon.removeClass("active");
+        _dim.hide();
+        _gnb.slideUp();
+        _header.removeClass("change");
+        }
 
 		$('html,body').animate({
 			scrollTop: $target+$position
